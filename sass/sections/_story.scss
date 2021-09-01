@@ -1,0 +1,52 @@
+.story {
+  background-color: $color-main-bg;
+
+  display: grid;
+  justify-content: center;
+  grid-template-columns: min-content minmax(min-content, 35vw);
+  padding: 10rem 5rem;
+  grid-gap: 5rem;
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  &:not(img) {
+    grid-column: 2 / -1;
+  }
+
+  &__img {
+    height: 90%;
+  }
+
+  &__heading {
+    width: 40rem;
+    height: min-content;
+  }
+
+  &__text {
+    padding: 2.5rem 0;
+  }
+
+  &__btn {
+    background-color: transparent;
+    color: $color-cyan;
+    font-size: 1.6rem;
+    border: none;
+    outline: none;
+    border-radius: none;
+    padding: 0.5rem 0;
+
+    display: flex;
+    align-items: center;
+
+    border-bottom: 1px solid $color-cyan;
+  }
+
+  &__arrow {
+    margin-left: 1rem;
+  }
+}
