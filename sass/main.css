@@ -1,0 +1,128 @@
+.heading-1 {
+  font-size: 4rem;
+  color: white;
+}
+
+.text-1 {
+  color: white;
+}
+
+.btn {
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.6rem;
+  background-image: -webkit-gradient(linear, left top, right top, from(#65e2d9), to(#339ecc));
+  background-image: linear-gradient(to right, #65e2d9, #339ecc);
+  color: white;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 1.4rem;
+  background-color: #1c2431;
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+}
+
+.features {
+  background-color: orchid;
+}
+
+.story {
+  background-color: palegreen;
+}
+
+.testimonials {
+  background-color: paleturquoise;
+}
+
+.newsletter {
+  background-color: peachpuff;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5rem 6rem;
+}
+
+.nav__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav__link {
+  font-family: "Raleway", sans-serif;
+  color: white;
+  font-size: 1.6rem;
+  cursor: pointer;
+  text-decoration: none;
+  list-style: none;
+}
+
+.nav__link:not(:last-child) {
+  margin-right: 5rem;
+}
+
+.header {
+  background-image: url(../images/bg-curvy-desktop.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 25% 100%;
+  height: 127vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Raleway", sans-serif;
+}
+
+.header__tagline {
+  max-width: 75rem;
+  text-align: center;
+  padding: 4rem 3rem;
+}
+
+.header__text {
+  text-align: center;
+  max-width: 55rem;
+  font-size: 1.9rem;
+  margin-bottom: 3rem;
+}
+
+.header__btn {
+  padding: 1.7rem 9rem;
+}
+/*# sourceMappingURL=main.css.map */
