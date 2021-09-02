@@ -3,10 +3,27 @@
   display: flex;
   padding: 0 10vw;
   padding-bottom: 50vh;
+
   & > * {
     &:not(:last-child) {
       margin-right: 3.5rem;
+
+      @include respond(tablet-sm) {
+        margin-right: 0;
+        margin-bottom: 3.5rem;
+      }
     }
+  }
+
+  @include respond(tablet-md) {
+    padding-top: 10vh;
+    padding-bottom: 40vh;
+  }
+
+  @include respond(tablet-sm) {
+    flex-direction: column;
+    padding-top: 4vh;
+    padding-bottom: 50vh;
   }
 
   &::before {
@@ -18,6 +35,10 @@
     background-size: contain;
     transform: scale(4) translate(0.7rem, 0.9rem);
     z-index: 10;
+
+    @include respond(tablet-sm) {
+      transform: scale(1) translate(0.7rem, -0.2rem);
+    }
   }
 }
 

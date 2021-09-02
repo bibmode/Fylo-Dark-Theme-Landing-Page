@@ -18,6 +18,11 @@
 
     border-radius: 8px;
     box-shadow: 0.5rem 1rem 1rem rgba(#000, 0.4);
+
+    @include respond(tablet) {
+      width: 90%;
+      justify-self: center;
+    }
   }
 
   &__heading {
@@ -32,11 +37,19 @@
   }
 
   &__bottom {
-    margin: 3rem 0;
+    margin: 3rem 0 3.5rem 0;
     display: flex;
     justify-content: center;
 
     width: 100%;
+
+    @include respond(tablet-sm) {
+      width: 85%;
+    }
+
+    @include respond(phone-big) {
+      flex-wrap: wrap;
+    }
   }
 
   &__input {
@@ -47,9 +60,24 @@
     border: none;
     outline: none;
     border-radius: 50px;
+
+    @include respond(tablet) {
+      margin-right: 1.8rem;
+    }
+
+    @include respond(phone-big) {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 1.8rem;
+    }
   }
 
   &__btn {
     padding: 0 3rem;
+    @include respond(phone-big) {
+      padding: 1.4rem;
+
+      width: 100%;
+    }
   }
 }

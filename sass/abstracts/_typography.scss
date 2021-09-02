@@ -1,6 +1,10 @@
 .heading-1 {
   font-size: 4rem;
   color: $color-white;
+
+  @include respond(phone-big) {
+    font-size: 3rem;
+  }
 }
 
 .heading-2 {
@@ -33,6 +37,7 @@
   border: none;
   border-radius: 50px;
   font-size: 1.6rem;
+  cursor: pointer;
 
   background-image: linear-gradient(to right, $color-cyan, $color-blue);
   color: $color-white;

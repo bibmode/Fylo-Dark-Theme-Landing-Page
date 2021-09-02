@@ -3,10 +3,22 @@
 
   display: grid;
   justify-content: center;
-  grid-template-columns: max-content minmax(min-content, 35vw);
+  grid-template-columns: min-content minmax(min-content, 35vw);
   padding: 10rem 5rem;
   grid-gap: 5rem;
   z-index: 0;
+
+  @include respond(tablet-md) {
+    grid-gap: 2rem;
+  }
+
+  @include respond(tablet-sm) {
+    grid-template-columns: min-content;
+  }
+
+  @include respond(phone-md) {
+    justify-content: center;
+  }
 
   &__right {
     display: flex;
@@ -20,17 +32,37 @@
   }
 
   &__img {
-    height: 90%;
+    width: 40vw;
     grid-column: 1 / 2;
+
+    @include respond(tablet-sm) {
+      width: 60vw;
+      justify-self: center;
+    }
+
+    @include respond(phone-md) {
+      width: 90vw;
+    }
   }
 
   &__heading {
     width: 40rem;
     height: min-content;
+    @include respond(tablet-md) {
+      font-size: 2rem;
+    }
+
+    @include respond(phone-md) {
+      width: 100%;
+    }
   }
 
   &__text {
     padding: 2.5rem 0;
+
+    @include respond(tablet-md) {
+      font-size: 1.4rem;
+    }
   }
 
   &__btn {
@@ -41,6 +73,7 @@
     outline: none;
     border-radius: none;
     padding: 0.5rem 0;
+    cursor: pointer;
 
     display: flex;
     align-items: center;

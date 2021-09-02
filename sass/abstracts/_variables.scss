@@ -10,3 +10,35 @@ $color-white: hsl(0, 0%, 100%);
 
 $font-main: "Open Sans", sans-serif;
 $font-accents: "Raleway", sans-serif;
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == tablet {
+    @media only screen and(max-width: 64.75em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tablet-md {
+    @media only screen and(max-width: 57.81em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tablet-sm {
+    @media only screen and(max-width: 46em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == phone-big {
+    @media only screen and(max-width: 37em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == phone-md {
+    @media only screen and(max-width: 30.625em) {
+      @content;
+    }
+  }
+}

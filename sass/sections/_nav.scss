@@ -3,10 +3,17 @@
   justify-content: space-between;
   padding: 5rem 6rem;
 
+  @include respond(phone-big) {
+    padding: 4rem 3rem;
+  }
+
   &__logo {
   }
 
   &__img {
+    @include respond(phone-big) {
+      width: 11rem;
+    }
   }
 
   &__links {
@@ -24,6 +31,14 @@
 
     &:not(:last-child) {
       margin-right: 5rem;
+
+      @include respond(tablet-sm) {
+        margin-right: 2.5rem;
+      }
+    }
+
+    @include respond(tablet-sm) {
+      font-size: 1.4rem;
     }
   }
 }
