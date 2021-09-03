@@ -9,8 +9,12 @@
   flex-direction: column;
   align-items: center;
 
+  @include respond(tablet) {
+    height: 75vw;
+  }
+
   @include respond(tablet-md) {
-    height: 110vh;
+    height: 90vw;
   }
 
   @include respond(tablet-sm) {
@@ -20,7 +24,11 @@
   &__tagline {
     max-width: 75rem;
     text-align: center;
-    padding: 4rem 3rem;
+    padding: 3.5rem 3rem;
+
+    @include respond(tablet) {
+      padding-bottom: 2rem;
+    }
 
     @include respond(phone-big) {
       padding-bottom: 2.5rem;
@@ -33,6 +41,15 @@
     font-size: 1.9rem;
     margin-bottom: 3rem;
 
+    @include respond(tablet) {
+      margin-bottom: 2.5rem;
+    }
+
+    @include respond(tablet) {
+      font-size: 1.7rem;
+      max-width: 52rem;
+    }
+
     @include respond(phone-big) {
       font-size: 1.5rem;
       margin-bottom: 2rem;
@@ -41,11 +58,11 @@
   }
 
   &__btn {
-    padding: 1.7rem 9rem;
+    padding: 1.6rem 9rem;
   }
 
   &__art {
-    width: 50vw;
+    width: 45vw;
 
     @include respond(phone-big) {
       width: 80vw;

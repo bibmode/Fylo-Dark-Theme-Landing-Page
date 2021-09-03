@@ -3,6 +3,12 @@
   color: white;
 }
 
+@media only screen and (max-width: 64.75em) {
+  .heading-1 {
+    font-size: 3.5rem;
+  }
+}
+
 @media only screen and (max-width: 37em) {
   .heading-1 {
     font-size: 2.5rem;
@@ -33,6 +39,7 @@
 
 .text-1 {
   color: white;
+  line-height: 1.6;
 }
 
 .text-sm {
@@ -49,6 +56,7 @@
   background-image: -webkit-gradient(linear, left top, right top, from(#65e2d9), to(#339ecc));
   background-image: linear-gradient(to right, #65e2d9, #339ecc);
   color: white;
+  font-weight: 700;
 }
 
 *,
@@ -173,9 +181,15 @@ a {
           align-items: center;
 }
 
+@media only screen and (max-width: 64.75em) {
+  .header {
+    height: 75vw;
+  }
+}
+
 @media only screen and (max-width: 57.81em) {
   .header {
-    height: 110vh;
+    height: 90vw;
   }
 }
 
@@ -188,7 +202,13 @@ a {
 .header__tagline {
   max-width: 75rem;
   text-align: center;
-  padding: 4rem 3rem;
+  padding: 3.5rem 3rem;
+}
+
+@media only screen and (max-width: 64.75em) {
+  .header__tagline {
+    padding-bottom: 2rem;
+  }
 }
 
 @media only screen and (max-width: 37em) {
@@ -204,6 +224,19 @@ a {
   margin-bottom: 3rem;
 }
 
+@media only screen and (max-width: 64.75em) {
+  .header__text {
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 64.75em) {
+  .header__text {
+    font-size: 1.7rem;
+    max-width: 52rem;
+  }
+}
+
 @media only screen and (max-width: 37em) {
   .header__text {
     font-size: 1.5rem;
@@ -213,11 +246,11 @@ a {
 }
 
 .header__btn {
-  padding: 1.7rem 9rem;
+  padding: 1.6rem 9rem;
 }
 
 .header__art {
-  width: 50vw;
+  width: 45vw;
 }
 
 @media only screen and (max-width: 37em) {
