@@ -5,13 +5,19 @@
 
 @media only screen and (max-width: 37em) {
   .heading-1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 }
 
 .heading-2 {
   font-size: 3rem;
   color: white;
+}
+
+@media only screen and (max-width: 37em) {
+  .heading-2 {
+    font-size: 2rem;
+  }
 }
 
 .heading-3 {
@@ -88,13 +94,19 @@ a {
 
 @media only screen and (max-width: 37em) {
   .nav {
-    padding: 4rem 3rem;
+    padding: 4rem 2rem;
   }
 }
 
 @media only screen and (max-width: 37em) {
   .nav__img {
     width: 11rem;
+  }
+}
+
+@media only screen and (max-width: 37em) {
+  .nav__img {
+    width: 9rem;
   }
 }
 
@@ -125,9 +137,21 @@ a {
   }
 }
 
+@media only screen and (max-width: 37em) {
+  .nav__link:not(:last-child) {
+    margin-right: 1.9rem;
+  }
+}
+
 @media only screen and (max-width: 46em) {
   .nav__link {
     font-size: 1.4rem;
+  }
+}
+
+@media only screen and (max-width: 37em) {
+  .nav__link {
+    font-size: 1.3rem;
   }
 }
 
@@ -182,8 +206,9 @@ a {
 
 @media only screen and (max-width: 37em) {
   .header__text {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     margin-bottom: 2rem;
+    max-width: 82vw;
   }
 }
 
@@ -537,6 +562,13 @@ a {
       grid-template-columns: 1fr minmax(40rem, 95rem) 1fr;
 }
 
+@media only screen and (max-width: 37em) {
+  .newsletter {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
 .newsletter__container {
   background-color: #1c2431;
   -ms-grid-column: 2;
@@ -666,9 +698,9 @@ a {
 
 @media only screen and (max-width: 37em) {
   .footer {
-    -ms-grid-columns: max-content;
-        grid-template-columns: -webkit-max-content;
-        grid-template-columns: max-content;
+    -ms-grid-columns: min-content;
+        grid-template-columns: -webkit-min-content;
+        grid-template-columns: min-content;
     -ms-grid-rows: min-content (min-content)[4];
         grid-template-rows: -webkit-min-content repeat(4, -webkit-min-content);
         grid-template-rows: min-content repeat(4, min-content);

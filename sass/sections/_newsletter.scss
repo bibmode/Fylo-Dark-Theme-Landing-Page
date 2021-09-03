@@ -8,6 +8,10 @@
     1fr minmax(40rem, 95rem)
     1fr;
 
+  @include respond(phone-big) {
+    grid-template-columns: 1fr;
+  }
+
   &__container {
     background-color: $color-dark-blue;
     grid-column: 2 / 3;
