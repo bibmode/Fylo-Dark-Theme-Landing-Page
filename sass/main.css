@@ -59,6 +59,56 @@
   font-weight: 700;
 }
 
+.btn:hover {
+  background-image: -webkit-gradient(linear, left top, right top, from(#339ecc), to(#339ecc));
+  background-image: linear-gradient(to right, #339ecc, #339ecc);
+  -webkit-filter: brightness(150%) saturate(45%);
+          filter: brightness(150%) saturate(45%);
+}
+
+.error-msg {
+  color: orangered;
+}
+
+.success-msg {
+  color: greenyellow;
+}
+
+.note {
+  justify-self: flex-start;
+  width: 100%;
+  margin-top: 1rem;
+  padding-left: 12%;
+}
+
+@media only screen and (max-width: 57.81em) {
+  .note {
+    padding-left: 10%;
+  }
+}
+
+@media only screen and (max-width: 46em) {
+  .note {
+    padding-left: 5%;
+  }
+}
+
+@media only screen and (max-width: 42em) {
+  .note {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-left: 0;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
 *,
 *::after,
 *::before {
@@ -133,6 +183,11 @@ a {
   cursor: pointer;
   text-decoration: none;
   list-style: none;
+}
+
+.nav__link:hover {
+  text-decoration: underline;
+  font-weight: 700;
 }
 
 .nav__link:not(:last-child) {
@@ -487,6 +542,16 @@ a {
   border-bottom: 1px solid #65e2d9;
 }
 
+.story__btn:hover {
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+.story__btn:hover > * {
+  -webkit-filter: saturate(1%) brightness(130%);
+          filter: saturate(1%) brightness(130%);
+}
+
 .story__arrow {
   margin-left: 1rem;
 }
@@ -649,6 +714,8 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -658,13 +725,6 @@ a {
 @media only screen and (max-width: 46em) {
   .newsletter__bottom {
     width: 85%;
-  }
-}
-
-@media only screen and (max-width: 37em) {
-  .newsletter__bottom {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
   }
 }
 
@@ -684,7 +744,7 @@ a {
   }
 }
 
-@media only screen and (max-width: 37em) {
+@media only screen and (max-width: 42em) {
   .newsletter__input {
     width: 100%;
     margin-right: 0;
@@ -696,7 +756,7 @@ a {
   padding: 0 3rem;
 }
 
-@media only screen and (max-width: 37em) {
+@media only screen and (max-width: 42em) {
   .newsletter__btn {
     padding: 1.4rem;
     width: 100%;

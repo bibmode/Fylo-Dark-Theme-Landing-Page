@@ -33,6 +33,11 @@
     text-decoration: none;
     list-style: none;
 
+    &:hover {
+      text-decoration: underline;
+      font-weight: 700;
+    }
+
     &:not(:last-child) {
       margin-right: 5rem;
 

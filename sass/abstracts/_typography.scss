@@ -51,4 +51,38 @@
   color: $color-white;
 
   font-weight: 700;
+
+  &:hover {
+    background-image: linear-gradient(to right, $color-blue, $color-blue);
+    filter: brightness(150%) saturate(45%);
+  }
+}
+
+.error-msg {
+  color: orangered;
+}
+
+.success-msg {
+  color: greenyellow;
+}
+
+.note {
+  justify-self: flex-start;
+  width: 100%;
+  margin-top: 1rem;
+  padding-left: 12%;
+
+  @include respond(tablet-md) {
+    padding-left: 10%;
+  }
+
+  @include respond(tablet-sm) {
+    padding-left: 5%;
+  }
+
+  @include respond(tablet-tiny) {
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+  }
 }

@@ -30,6 +30,12 @@ $font-accents: "Raleway", sans-serif;
     }
   }
 
+  @if $breakpoint == tablet-tiny {
+    @media only screen and(max-width: 42em) {
+      @content;
+    }
+  }
+
   @if $breakpoint == phone-big {
     @media only screen and(max-width: 37em) {
       @content;

@@ -79,6 +79,15 @@
     align-items: center;
 
     border-bottom: 1px solid $color-cyan;
+
+    &:hover {
+      color: $color-white;
+      border-bottom: 1px solid $color-white;
+    }
+
+    &:hover > * {
+      filter: saturate(1%) brightness(130%);
+    }
   }
 
   &__arrow {
